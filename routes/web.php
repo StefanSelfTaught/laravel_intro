@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
-Route::get('/about', 'PagesController@about');
-Route::get('/services', 'PagesController@services');
+Route::get('/', 'PagesController@home');
 
-Route::resource('posts', 'PostController');
+Route::get('/about', 'PagesController@about');
+
+Route::get('/contact', 'PagesController@contact');
+
+Route::get('/projects', 'ProjectsController@index');
