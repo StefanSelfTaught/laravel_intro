@@ -17,4 +17,24 @@ Route::get('/about', 'PagesController@about');
 
 Route::get('/contact', 'PagesController@contact');
 
-Route::get('/projects', 'ProjectsController@index');
+
+/* 
+
+  GET /projects (index)
+  
+  GET /projects/create (create)
+
+  GET /projects/1 (show)
+
+  POST /projects (store)
+
+  GET /projects/1/edit (edit)
+
+  PATCH /projets/1 (update)
+
+  DELETE /projects/1 (destroy)
+
+*/
+
+
+Route::resource('projects', 'ProjectsController');
